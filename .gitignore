@@ -1,1 +1,7 @@
-bin/**/* 
+bin/*
+*.class
+.cache
+.classpath
+.project
+.cache
+.settings/*
