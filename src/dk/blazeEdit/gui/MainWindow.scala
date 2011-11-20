@@ -1,4 +1,4 @@
-package dk.blazeEdit
+package dk.blazeEdit.gui
 
 import swing.Action._
 import swing._
@@ -43,17 +43,15 @@ class MainWindow extends MainFrame {
     val text2 = new Label("West")
     val text3 = new Label("East")
     val text4 = new Label("North")
-    val text5 = new Label("South")
+    val south = new ConsoleComponent()
 
     layout(text) = Center
     layout(text2) = West
     layout(text3) = East
     layout(text4) = North
-    layout(text5) = South
+    layout(south) = South
 
     border = LineBorder.createBlackLineBorder()
 
   }
-
-  size = new Dimension(500,500)
 }

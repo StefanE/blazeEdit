@@ -10,7 +10,10 @@ import scala.swing._
 class NotificationActor extends MouseAdapter with ActionListener with Actor {
 
   override def receive() = {
-    case (msg: String, pos: Point) => createNotification(msg, pos)
+    case (msg: String, pos: Point) => {
+
+      createNotification(msg, pos)
+    }
     case other => println("Ignored:" + other)
   }
 
